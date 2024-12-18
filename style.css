@@ -1,0 +1,169 @@
+/* -------------------------------------------- */
+/* -----------------Main grid------------------ */
+/* -------------------------------------------- */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header'
+      'aside section section section';
+}
+
+aside {
+    color: #36383E;
+    grid-area: aside;
+    width: 250px;
+    background-color: #EEE7E1;
+    min-height: 80vh;
+    padding: 0 40px;
+}
+
+section {
+    color: #36383E;
+    grid-area: section;
+    background-color: #FFFFFF;
+    max-width: 690px;
+    position: absolute;
+    padding: 0 30px 0 40px;
+    margin: 250px 0 0 340px;
+}
+
+header {
+    grid-area: header;
+    background-color: #36383E;
+    color: #FFFFFF; 
+    min-height: 250px;
+}
+
+.triangle {
+    position: absolute;
+    border-left: 165px solid transparent;
+    border-right: 165px solid transparent;
+    border-top: 60px solid #36383E;
+    top: 250px;
+}
+
+/* -------------------------------------------- */
+/* -----------------Text stuff---------------- */
+/* -------------------------------------------- */
+h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+h2 {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.topTitle {
+    padding-top: 6rem;
+}
+.jobTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    margin-top: 1.2rem;
+} 
+.jobDate{
+    font-size: 0.9rem;
+    color: grey;
+}
+
+/* -------------------------------------------- */
+/* ----------------Header stuff---------------- */
+/* -------------------------------------------- */
+#ProfileCircle {
+    background-image: url('sketch.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-color: yellow;
+    width: 200px;                
+    height: 200px;     
+    border-radius: 50%;
+    position: absolute;
+    margin: 25px 0 0 65px;
+}
+
+#HeaderText {
+    position: absolute;
+    margin: 75px 0 0 380px;
+}
+
+
+/* -------------------------------------------- */
+/* -----------------Aside stuff---------------- */
+/* -------------------------------------------- */
+
+/* -----------------Contact---------------- */
+#Contact ul {
+    list-style-type: none;
+    line-height: 180%;
+}
+#Contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#Contact h2 {
+    padding-bottom: 1rem;
+}
+
+/* -----------------EducationList---------------- */
+#EducationList {
+    margin-left: 24px;
+    margin-top: 20px;
+}
+#EducationList ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+#EducationList ul li:first-child {
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+}
+#EducationList ul li:first-child::before {
+    content: "•";
+    font-size: 2.5rem;           
+    position: absolute;
+    left: -1.5rem;                 
+    top: -40%;                   
+}
+#VerticalLine {
+    position: absolute;
+    margin: -70px 0 0 -17px;
+    width: 3px; height: 60px; transform: 90deg; background-color: #36383E; border: none;
+}
+
+/* -----------------Competense---------------- */
+#Competense h2 {
+    padding-bottom: 1rem;
+}
+#Competense ul li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* -------------------------------------------- */
+/* ----------------Section stuff--------------- */
+/* -------------------------------------------- */
+#Summary {
+    line-height: 150%;
+}
+
+#WorkExp ul li{
+    margin: 0.5rem 0;
+    margin-left: 2.5rem;
+    line-height: 150%;
+}
+
+.HorizontalLines {
+    margin: 3px 0 16px 0;
+    border: none; height: 3px; background-color: #36383E;
+}
